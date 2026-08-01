@@ -46,28 +46,26 @@
   margin-bottom: 35px;
 }
 
-
-body {
-  background-color: antiquewhite;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* Visually hide the link off-screen by default */
+/* Hide the link off-screen by default */
 .skip-link {
   position: absolute;
   top: -1000px;
   left: -1000px;
-  background: #1d4ed8; /* High-contrast background color */
-  color: #ffffff;
-  padding: 12px 24px;
-  z-index: 9999; /* Ensure it stays above the header */
-  transition: top 0.2s ease; /* Smooth slide-in effect */
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  z-index: 100;
 }
 
-/* Move the link back into view when it receives keyboard focus */
+/* Bring it into view when a user tabs onto it */
 .skip-link:focus {
   top: 10px;
-  left:10px;
+  left: 10px;
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body, .banner {
