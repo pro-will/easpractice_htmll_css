@@ -4,6 +4,24 @@
   box-sizing: border-box;
 }
 
+/* Hide the link off-screen by default */
+.skip-link {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  z-index: 100;
+}
+
+/* Bring it into view when a user tabs onto it */
+.skip-link:focus {
+  top: 10px;
+  left: 10px;
+}
+
+
 .banner-container {
   position: relative;
   width: 100%;
