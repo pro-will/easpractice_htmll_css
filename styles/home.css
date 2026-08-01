@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Call to Action Button */
+.banner-text-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  text-align: center;
+
+}
+
+.banner-btn:hover {
+  background-color: #0056b3;
+}
+
+.banner-text-button h1 {
+  color: rgba(5, 243, 247, 0.952);
+  margin-bottom: 36px;
+}
+
+
+.banner-btn {
+  background-color: #0056b3;
+  color: #ffffff;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.banner-container img {
+  width: 100%;
+  height: 450px;
+  display: block;
+  margin-bottom: 35px;
+}
+
+
+body {
+  background-color: antiquewhite;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Visually hide the link off-screen by default */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: #1d4ed8; /* High-contrast background color */
+  color: #ffffff;
+  padding: 12px 24px;
+  z-index: 9999; /* Ensure it stays above the header */
+  transition: top 0.2s ease; /* Smooth slide-in effect */
+}
+
+/* Move the link back into view when it receives keyboard focus */
+.skip-link:focus {
+  top: 0;
+}
+
+body, .banner {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.navigation {
+  background-color: rgb(65, 65, 226);
+  color: white;
+  
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 128, 0);
+  display: flex;
+  justify-content: center;
+
+}
+
+
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+ 
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+
+}
+
+ul li a:hover {
+  background-color: rgb(48, 48, 192);
+}
+
+
+h1 {
+  color: green;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.Adventures {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 12px;
+}
+
+.Adventures img {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  padding: 3px;
+  border: 1px solid;
+  background-color: green;
+}
+
+main h1 {
+  margin-bottom: 15px;
+}
+
+.div {
+ margin-bottom: 15px;
+ border-color: #0056b3;
+}
+
+.image-saltlake {
+  border-color: #0056b3;
+}
+
+.biking-images .image-saltlake {
+  border: 1px solid;
+  border-radius: 50%;
+  margin-right: 6px;
+ 
+    /* Prevents distortion by cropping excess parts */
+  object-fit: cover; 
+  
+    /* Smooth transition for the color change effect */
+  transition: filter 0.3s ease; 
+}
+
+.biking-images .image-saltlake:hover {
+  background-color: rgb(255, 98, 0);
+  filter: sepia(100%) hue-rotate(140deg) saturate(200%);
+}
+
+.biking-images .image-saltlake:active {
+  filter: grayscale(100%);
+}
+
+.biking-images .bike-idaho {
+  border: 2px solid;
+  width: 200px;             /* Define a width */
+  aspect-ratio: 1 / 1;      /* Forces a square shape */
+  object-fit: cover; 
+  margin-right: 6px;
+  
+}
+
+.biking-images .bike-rebex {
+  width: 250px;
+  border: none;
+  border-radius: 12px;
+  margin-right: 6px;
+
+
+  /* Smooths the rotation animation */
+  transition: transform 0.3s ease; 
+}
+
+.biking-images .bike-rebex:active {
+  /* Rotates the image 180 degrees on click */
+  transform: rotate(180deg); 
+}
+
+.biking-images {
+  width: 250px;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 800px) {
+  .biking-images {
+    flex-flow: column;
+  }
+}
+
+footer p {
+  text-align: center;
+  margin-top: 15px;
+}
