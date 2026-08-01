@@ -56,7 +56,7 @@ body {
 .skip-link {
   position: absolute;
   top: -100px;
-  left: 0;
+  left: -100px;
   background: #1d4ed8; /* High-contrast background color */
   color: #ffffff;
   padding: 12px 24px;
