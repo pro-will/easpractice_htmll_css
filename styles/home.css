@@ -148,6 +148,7 @@ main h1 {
   border: 1px solid;
   border-radius: 50%;
   margin-right: 6px;
+  margin-left: 8px;
  
     /* Prevents distortion by cropping excess parts */
   object-fit: cover; 
